@@ -1,0 +1,24 @@
+III./ ADMINISTRATION RESEAU
+Quelle est l’adresse IP et le masque de votre interface réseau ?
+adresse ip : 192.168.43.161  masque: 255.255.255.0
+
+Ecrivez une procédure pour fixer l’adresse IP de votre Raspberry pi.
+Pour fixer l'adresse ip de la rasberry il faut lancé le shell, 
+Pour attribuer une adresse IP au Raspberry Pi, 
+utilisez la commande sudo nano/etc/dhcpc.conf, 
+static ip_address=192.168.43.161/24 
+suivie de l’adresse IPv4 souhaitée puis de « /24
+donc static ip_address=192.168.43.161/24 
+puis ip route | grep eth0
+
+Ecrivez une procédure pour vous connecter à la Raspberry pi en SSH
+
+sudo raspi-config
+
+
+sélectionner d’abord le point 7 
+(« Advanced Options ») puis A4 (« SSH »). 
+L’outil vous demande si vous voulez activer le serveur SSH, 
+ce que vous confirmez, avant de refermer les paramètres via 
+la touche « Finish ».
+
