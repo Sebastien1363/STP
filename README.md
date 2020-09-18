@@ -1,1 +1,1 @@
-Voici les TP *iTP1, TP2, TP3* 
+Voici les TP *TP1, TP2, TP3* 
